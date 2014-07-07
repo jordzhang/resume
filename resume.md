@@ -22,7 +22,6 @@
 1. RabbitMQ
 1. Zookeeper
 1. Netty
-1. Ha-proxy
 1. Mysql
 1. Nginx
 1. Linux/Mac
