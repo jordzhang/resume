@@ -1,83 +1,94 @@
-# David Hamp-Gonsalves
-## Senior Developer & Code Enthusiast
+# 张志亮
+## 高级JAVA工程师
 
-> [davidhampgonsalves.com](http://www.davidhampgonsalves.com)
-> [davidhampgonsalves@gmail.com](mailto:davidhampgonsalves@gmail.com)
-> (902) 817-3574
+> 江苏南京，男，1983年
+> [jordzhang@gmail.com](jordzhang@gmail.com)
+> (+86) 136-2159-0554
 
 ------
 
-### Technical
+### 简介 {#profile}
+
+8年的JEE设计开发经验，4年MIS系统开发经验，3年多的移动互联网产品设计开发管理实践，半年互联网项目的创业经历，多年的项目管理经验，熟悉从前端(web/app)到后端服务的全栈技术。较强学习适应、团队协作、快速实践能力。
+
+-------
+
+### 技术 {#technical}
 
 1. Java
-1. Android / iOS
-1. Javascript / NodeJS
-1. Python
-1. Git / SVN
-1. Cordova
-<!-- 1. Spring / Wicket -->
-1. Ruby
-<!-- 1. Weblogic / Websphere -->
-<!-- 1. Tomcat / Jetty -->
-<!-- 1. Oracle DB / MSSQL -->
-1. PostgreSQL / MySQL
-1. Backbone.js
+1. ruby/rubyonrails
+1. Redis
+1. Memcached
+1. RabbitMQ
+1. Zookeeper
+1. Netty
+1. Ha-proxy
+1. Mysql
+1. Nginx
+1. Linux/Mac
+1. Git/SVN
+1. html5/CSS3
+1. Javascript/JQuery
+1. Bootstrap
+1. Objective-C
 
 ------
 
-### Experience
+### 经历 {#experience}
 
-**NTTData** *Senior Consultant* __2012 to present__
-	Designed Backbone.js based application to replace and improve upon existing legacy system.
-	Introduced BDD style testing using Jasmine/Karma into existing application code.
-	Developed modern solutions and features for large Enterprise Java systems.
-	Collaborated with and guided global team members transitioning to client side architecture.
-	**Technical Environment** Backbone.js, Jasmine.js, Coffeescript, SpringSource, Tomcat.
+北京宽连十方
+: *Java高级工程师*
+  __2011.4月至今__
+  负责项目组项目的技术架构、开发和团队管理，包括智能重定向web端项目和push server服务端项目。
 
-**Sumtotal Systems** *Senior Java Developer* __2008 to 2012__
-	Designed and implemented features and improvements for multiple enterprise sized applications.
-	Automated manual report generation for legacy ticketing system to provide reliable team analytics.
-	Provided quality solutions to mission critical production issues in a timely manner.
-	Proposed, designed and implemented a realtime tracking, deployment and notification system for test environments.
-	**Technical Environment** Weblogic/Websphere, SpringSource/Wicket, MSSQL/Oracle, JUnit.
+北京海辉
+: *Java开发工程师*
+  __2009年至年2011年__
+  在某大型电商企业开发维护SOA派单子工程。
 
-**We Can Pretend** *Technical Consultant* __2011__
-	Architected and implemented a interactive media streaming service that enabled realtime, massively multiplayer, jeopardy-style interactions.
-	Built host interface to inject synchronized prompts, overlays and widgets into live video stream.
-	Created detailed documentation regarding technical requirements, project time lines and staffing guidelines for realizing total product offering.
-	**Technical Environment** Wowza Media Server, Adobe Flex, Javascript.
+江苏金智教育
+: *Java开发工程师*
+  __2007年至年2009年__
+  主导项目组项目的技术开发、基于portlet开发数据统计分析模块。
 
-<!--
-**Redline Distribution** *Web Application Developer* __2008__
-	Wrote a versatile Java EE based, database-driven, e-commerce system for the real time sale, processing and shipping of products available from external distributors such as Baker-Taylor and DeepDiscount.
-	The system interfaced with external distributors to ensure current inventory, status and price and used AJAX rich components to improve usability, convenience and efficiency.
-	**Technical Environment** JBoss, Seam, MySQL, Hibernate, JSF, RichFaces, EJB.
--->
-
-**CIBC** *Test Analyst* __2007 to 2008__
-	Eliminated manual testing processes with automated QTP scripts to increase productivity and limit repetitive human task based testing.
-	Worked cohesively with other developers and team members to plan, design and implement multi-system automated tests which simulate multiple users and roles.
-	**Technical Environment** VB, Quick Test Professional.
+南京浩博科技有限公司
+: *Java开发工程师*
+  __2006年至年2007年__
+  在项目经理工作分配下，完成财务系统的部分模块开发和协调测试。
 
 ------
 
-### Projects
+### 项目 {#project}
 
-* **Ethical Barcode**
-	<a href=http://www.ethicalbarcode.com class=not-printed>ethicalbarcode.com</a>
-	Cordova based app(iOS & Android) that leverages a huge amalgamation of public data. Driven by over 30 web spiders, 15 webservices and multiple external databases it provides brand ratings from non-profit organisations by scanning product barcodes.
+Push Server
+: push server是专为移动客户端实时推送通知消息的后台服务。总体包括TCP_PROXY、接入层、
+开放平台、服务端SDK、客户端SDK几个模块。用户需要在开放平台注册APP的信息，然后生成相关TOKEN。APP使用客户端SDK进行注册，由TCP_PROXY分配APP与接入层之间联调关系，APP与接入层保持长连接，由redis维护session。最后APP服务端就可以通过服务端SDK的API按广播、多播、单播的形式实时或者离线推送消息通知。技术当中zookeeper保持接入层服务的注册信息、系统配置信息，redis各类需要保持的基础信息和管理信息，rabbitmq负责任务推送，解耦服务端与接入层，Netty用于整个项目的HTTP、TCP、编解码网络服务。
 
-* **Halifax Crime Heatmap**
-	<a href=http://www.crimeheatmap.ca class=not-printed>crimeheatmap.ca</a>
-	HTML5 Animated heatmap visualising crimes in the city of Halifax. Built on a customised version Heatmap.js library which enables smooth animation. Won silver in the [Apps4Halifax](http://apps4halifax.ca/) city category.
+运营管理平台
+: 运营管理平台用于公司内部与移动运营商规范化沟通和流程自动化。包括统一认证中心、派单系统、portal门户
+  统一认证中心基于CAS实现一套统一认证和统一授权中心，维护有关认证和授权所有信息；派单系统基于商业流程引擎实施管理和二次开发；portal门户主要用于消息的聚合。
 
-* **Foxish**
-	<a href=https://chrome.google.com/webstore/detail/jpgagcapnkccceppgljfpoadahaopjdb class=not-printed>chrome.google.com</a>
-	Chrome extension that enables Firefox-style live RSS feeds with over fifteen thousand active users a 4/5 star rating. Featured on [Gizmodo](http://gizmodo.com/5609633/10-add+ons-you-have-to-know-about-for-google-chrome) & [LifeHacker](http://lifehacker.com/5603602/foxish-live-rss-adds-live-bookmarks-to-google-chrome).
+智能重定向
+: 智能重定向是服务于移动运营商普通用户由于上网出错而推送的服务，以及某个周期内第一次上网进行流量提醒服务。服务接入运营商网关，由网关按满足条件发起302到智能重定向服务。智能重定向由维护内容的管理后台和静态化的前台提醒导航页面。PV量级较高，所有页面内容使用freemark做静态化。缓存于memcached中，nginx做负载。
+
+高等学校基础情况统计分析
+: 抽取共享数据库的数据，按照特定定制主题统计分析相应有价值的数据，作为工具性软件图表展现相应数据价值点,能够根据需要快速满足分析各类数据，实现了具有一定BI工具的能力。基于portal技术，开发各portlet小应用。使用jsp、spring、spring mvc、jdbc、oracle、fusioncharts技术开发。
+
+易搜物（www.esowu.com）
+: 个人创业项目，易搜物（www.esowu.com)是为大学生提供二手物品相关的分类信息，交易平台。使用rubyonrails开发，mysql作存储，memcached作页面静态化和session保持。
+
+江苏省电力集团化财务系统
+: 江苏省电力的集团财务系统，管理整个江苏省电力所属的各个市，地区的财务。主要负责系统管理，预算管理，往来管理，资金预算等模块的部分代码的编写，以及一些相关接口提供。技术使用JSP(struts,ibatis/JDBC,spring)+eclipse+ DB2
 
 ------
 
-### Education
+### 学历 {#degree}
 
-**Bachelor of Technology (Software Development)** __2003 to 2007__
-	Seneca College of Applied Arts and Technology (Seneca@York), Toronto, Ontario
+本科
+: *信息管理与信息系统*
+  __2002年至2006年__
+  南京人口学院
+
+------
+
+
